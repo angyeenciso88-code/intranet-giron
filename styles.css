@@ -374,3 +374,98 @@ body{
     transform:translateY(-5px);
     box-shadow:0 8px 20px rgba(0,0,0,.12);
 }
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 768px){
+
+    .container{
+        display:block;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+
+    .logo img{
+        width:85px;
+    }
+
+    .menu{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .menu li{
+        margin-bottom:0;
+    }
+
+    .menu a{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .main{
+        margin-left:0;
+        width:100%;
+    }
+
+    .topbar{
+        flex-direction:column;
+        gap:15px;
+        height:auto;
+        padding:20px;
+    }
+
+    .search input{
+        width:100%;
+    }
+
+    .hero{
+        margin:20px;
+        height:auto;
+        padding:35px 25px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .paneles{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .contenido-panel{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .contenido-panel img{
+        width:100%;
+        height:auto;
+    }
+
+    .servicios-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pagina-tramites{
+        padding:25px;
+    }
+}
